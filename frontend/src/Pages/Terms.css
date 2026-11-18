@@ -1,0 +1,247 @@
+/* ================================
+   TERMS PAGE
+================================ */
+
+.terms-page {
+    width: 100%;
+    min-height: 100vh;
+
+    background: #f7fafc;
+}
+
+
+/* ================================
+   TERMS HERO
+================================ */
+
+.terms-hero {
+    min-height: 42vh;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 120px 20px 70px;
+
+    background:
+        linear-gradient(
+            rgba(3, 18, 35, 0.72),
+            rgba(3, 18, 35, 0.78)
+        ),
+        url("/image/terms.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    color: white;
+}
+
+
+/* ================================
+   HERO TITLE
+================================ */
+
+.terms-hero h1 {
+    margin: 0 0 15px;
+
+    font-size: clamp(42px, 6vw, 68px);
+
+    line-height: 1.1;
+
+    font-weight: 800;
+
+    letter-spacing: -1.5px;
+}
+
+
+/* ================================
+   HERO DESCRIPTION
+================================ */
+
+.terms-hero p {
+    max-width: 650px;
+
+    margin: 0;
+
+    font-size: 18px;
+
+    line-height: 1.6;
+
+    color: rgba(255, 255, 255, 0.88);
+}
+
+
+/* ================================
+   TERMS CONTENT
+================================ */
+
+.terms-content {
+    width: 90%;
+
+    max-width: 900px;
+
+    margin: 60px auto;
+
+    padding: 45px 50px;
+
+    background: white;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 10px 35px rgba(0, 0, 0, 0.08);
+
+    box-sizing: border-box;
+}
+
+
+/* ================================
+   SECTION HEADINGS
+================================ */
+
+.terms-content h2 {
+    margin: 0 0 12px;
+
+    font-size: 24px;
+
+    line-height: 1.4;
+
+    font-weight: 700;
+
+    color: #17324d;
+
+    transition: color 0.3s ease;
+}
+
+
+/* Heading hover */
+
+.terms-content h2:hover {
+    color: #168aad;
+}
+
+
+/* ================================
+   SECTION TEXT
+================================ */
+
+.terms-content p {
+    margin: 0 0 35px;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+
+    color: #536273;
+}
+
+
+/* Remove bottom spacing from
+   the final paragraph */
+
+.terms-content p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* ================================
+   TABLET
+================================ */
+
+@media (max-width: 768px) {
+
+    .terms-hero {
+        min-height: 35vh;
+
+        padding: 120px 20px 60px;
+    }
+
+
+    .terms-hero h1 {
+        font-size: 48px;
+    }
+
+
+    .terms-hero p {
+        font-size: 17px;
+    }
+
+
+    .terms-content {
+        width: 92%;
+
+        margin: 40px auto;
+
+        padding: 35px 30px;
+    }
+
+
+    .terms-content h2 {
+        font-size: 22px;
+    }
+
+
+    .terms-content p {
+        font-size: 16px;
+    }
+}
+
+
+/* ================================
+   MOBILE
+================================ */
+
+@media (max-width: 600px) {
+
+    .terms-hero {
+        min-height: 32vh;
+
+        padding: 110px 20px 50px;
+    }
+
+
+    .terms-hero h1 {
+        font-size: 38px;
+
+        letter-spacing: -0.5px;
+    }
+
+
+    .terms-hero p {
+        font-size: 15px;
+
+        line-height: 1.6;
+    }
+
+
+    .terms-content {
+        width: 92%;
+
+        margin: 30px auto;
+
+        padding: 28px 22px;
+
+        border-radius: 14px;
+    }
+
+
+    .terms-content h2 {
+        font-size: 20px;
+
+        line-height: 1.4;
+    }
+
+
+    .terms-content p {
+        font-size: 15px;
+
+        line-height: 1.7;
+
+        margin-bottom: 28px;
+    }
+}

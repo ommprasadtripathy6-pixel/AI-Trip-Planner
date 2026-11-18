@@ -1,0 +1,104 @@
+/* Destination section */
+.destination-section{
+    width: 100%;
+    min-height: 100vh;
+
+    background-image: 
+    linear-gradient(to bottom,
+     rgba(3,18,35,0.25),
+     rgba(3,18,35,0.75)
+    ), url("/image/download (2).jpg")
+    ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+}
+.destination-section-content {
+    width: 90%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items:center ;
+    padding: 40px 20px;
+}
+/* location */
+.destination-location{
+    display: inline-block;
+    padding: 10px 22px;
+    background: rgba(255,255,255,0.18);
+    border: 1px solid rgba (255,255,255,0.35);
+    border-radius: 30px;
+    backdrop-filter: blur(8px);
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    letter-spacing: 0.5px;
+}
+/* title design */
+.destination-content h2 {
+    margin: 0 0 18px;
+    font-size: 52px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    text-shadow: 0 4px 15px rgba(0,0,0,0.45);
+
+}
+/* Description */
+.destination-content p {
+    max-width: 650px;
+    margin: 0 0 30px;
+    font-size: 20px;
+    line-height: 1.6;
+    color: rgba(255,255,255,0.9);
+    text-shadow: 0 2px 8px rgba( 0,0,0,0.45);
+
+}
+/* explore button */
+.destination-btn {
+    padding: 15px 34px;
+    border: none;
+    border-radius: 30px;
+    background: #ffd95a;
+    color: #17202a;
+    font-size: 17px;
+    font-weight: 700;
+    cursor:pointer;
+    transition: transform 0.3s ease,
+    box-shadow 0.3s ease,background 0.3s ease;
+}
+.destination-btn:hover {
+   transform: translateY(-4px);
+   background: #ffe27a;
+   box-shadow: 0 10px 25px rgba(0,0,0,0.35);
+
+}
+@media (max-width:600px) {
+    .destination-section {
+        min-height: 80vh;
+        background-position: center;
+    }
+    .destination-content {
+        padding: 30px 15px;
+    }
+    .destination-content h2 {
+        font-size: 36px;
+    }
+    .destination-content p  {
+        font-size: 16px;
+    }
+    .destination-location {
+        font-size: 14px;
+        padding: 8px 18px;
+    }
+    .destination-btn {
+        padding: 13px 28px;
+        font-size: 16px;
+    }
+}

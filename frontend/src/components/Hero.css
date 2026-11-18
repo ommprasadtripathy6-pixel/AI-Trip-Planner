@@ -1,0 +1,287 @@
+/* ================================
+   HERO SECTION
+================================ */
+
+.hero {
+    min-height: 100vh;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    position: relative;
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            rgba(3, 18, 35, 0.58),
+            rgba(3, 18, 35, 0.72)
+        ),
+        url("/image/travel.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/* ================================
+   HERO CONTENT
+================================ */
+
+.hero-content {
+    width: 100%;
+    max-width: 900px;
+
+    padding: 120px 25px 80px;
+
+    color: white;
+
+    animation: heroFade 1s ease forwards;
+}
+
+
+/* ================================
+   TAGLINE
+================================ */
+
+.hero-tagline {
+    margin: 0 0 20px;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    letter-spacing: 3px;
+    text-transform: uppercase;
+
+    color: #ffe082;
+}
+
+
+/* ================================
+   MAIN HEADING
+================================ */
+
+.hero-content h1 {
+    margin: 0;
+
+    font-size: clamp(48px, 7vw, 82px);
+
+    line-height: 1.05;
+
+    font-weight: 800;
+
+    letter-spacing: -2px;
+}
+
+
+/* ================================
+   HIGHLIGHTED TEXT
+================================ */
+
+.hero-content h1 span {
+    display: block;
+
+    margin-top: 10px;
+
+    color: #ffe082;
+}
+
+
+/* ================================
+   DESCRIPTION
+================================ */
+
+.hero-description {
+    max-width: 700px;
+
+    margin: 28px auto 38px;
+
+    font-size: 18px;
+
+    line-height: 1.7;
+
+    color: rgba(255, 255, 255, 0.9);
+}
+
+
+/* ================================
+   BUTTON CONTAINER
+================================ */
+
+.hero-buttons {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 18px;
+
+    flex-wrap: wrap;
+}
+
+
+/* ================================
+   PRIMARY BUTTON
+================================ */
+
+.primary-btn {
+    padding: 15px 32px;
+
+    border: 2px solid #ffe082;
+    border-radius: 30px;
+
+    background: #ffe082;
+    color: #17324d;
+
+    font-size: 16px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+
+.primary-btn:hover {
+    transform: translateY(-4px);
+
+    background: #ffffff;
+
+    border-color: #ffffff;
+
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+}
+
+
+/* ================================
+   SECONDARY BUTTON
+================================ */
+
+.secondary-btn {
+    padding: 15px 32px;
+
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    border-radius: 30px;
+
+    background: #ffe082;
+    color: black;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+
+    transition: all 0.3s ease;
+}
+
+
+.secondary-btn:hover {
+    transform: translateY(-4px);
+
+    background: rgba(255, 255, 255, 0.18);
+
+    border-color: #ffffff;
+
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+}
+
+
+/* ================================
+   HERO ANIMATION
+================================ */
+
+@keyframes heroFade {
+
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+/* ================================
+   TABLET
+================================ */
+
+@media (max-width: 768px) {
+
+    .hero-content {
+        padding: 130px 25px 70px;
+    }
+
+    .hero-content h1 {
+        font-size: clamp(42px, 9vw, 64px);
+    }
+
+    .hero-description {
+        font-size: 17px;
+    }
+
+}
+
+
+/* ================================
+   MOBILE
+================================ */
+
+@media (max-width: 600px) {
+
+    .hero {
+        min-height: 100vh;
+
+        background-position: center;
+    }
+
+    .hero-content {
+        padding: 130px 20px 60px;
+    }
+
+    .hero-tagline {
+        font-size: 12px;
+        letter-spacing: 2px;
+    }
+
+    .hero-content h1 {
+        font-size: 43px;
+        line-height: 1.1;
+        letter-spacing: -1px;
+    }
+
+    .hero-content h1 span {
+        margin-top: 6px;
+    }
+
+    .hero-description {
+        font-size: 16px;
+        line-height: 1.6;
+
+        margin: 22px auto 30px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+
+        gap: 14px;
+    }
+
+    .primary-btn,
+    .secondary-btn {
+        width: 230px;
+    }
+
+}

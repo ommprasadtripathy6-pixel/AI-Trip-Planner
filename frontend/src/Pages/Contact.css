@@ -1,0 +1,118 @@
+.contact-page {
+    min-height: 100vh;
+    background: #f5f8fb;
+    color: #ffffff;
+}
+/* hero section */
+.contact-hero {
+    min-height: 45vh;
+    padding: 100px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background:  
+    linear-gradient(
+        rgba(3,18,35,0.78),
+        rgba(3,18,35,0.92)
+    ),url("/image/contact.jpg")
+    ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.contact-hero h1 {
+    margin: 0 0 20px;
+    font-size: 52px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.contact-hero p {
+    max-width: 650px;
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.7;
+    color: #dbe7f0;
+}
+/* contact content */
+.contact-content {
+    width: min(1100px,90%);
+    margin: 0 auto;
+    padding: 80px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    color: #1d2935;
+}
+/* contact-info */
+.contact-info  {
+    padding: 35px;
+}
+.contact-info h2 {
+    margin-bottom: 25px;
+    font-size: 32px;
+    color: #031223;
+}
+.contact-info p {
+    margin: 18px;
+    font-size: 17px;
+    line-height: 1.6;
+    color: #526170;
+}
+/* contact-form */
+.contact-form {
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    background: #ffffff;
+    border-radius: 18px;
+    box-shadow: 0 15px 40px rgba(3,18,35,0.12);
+}
+/*input */
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 15px 16px;
+    border: 1px solid #d9e1e8;
+    border-radius: 10px;
+    background: #f8fafc;
+    font-family: inherit;
+    font-size: 15px;
+    outline: none;
+    transition: border-color 0.3s ease,
+    box-shadow 0.3s ease,
+    background 0.3s ease;
+}
+/* textarea */
+.contact-form textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+/* focus */
+.contact-form input:focus,
+.contact-form textarea:focus {
+    background: #ffffff;
+    border-color: #1976d2;
+    box-shadow: 0 0 0 3px rgba(25,118,210,0.12);
+}
+/* placeholder */
+.contact-form
+input::placeholder,
+.contact-form
+textarea::placeholder {
+    color: #8995a3;
+}
+/* button */
+.contact-form button {
+    padding: 15px 25px;
+    border: none;
+    border-radius: 10px;
+    background: #031223;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.3s ease,
+    transform 0.3s ease,box-shadow 0.3s ease;
+}
